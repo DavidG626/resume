@@ -5,9 +5,20 @@ function toggleMenu() {
     icon.classList.toggle('open');
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+function toggleMenu() {
+    const menu = document.querySelector(".menu-links");
+    const icon = document.querySelector(".hamburger-icon");
+    menu.classList.toggle('open');
+    icon.classList.toggle('open');
+}
+
+function setupLogoInteraction() {
     const logoDiv = document.querySelector('.logo');
+    if (!logoDiv) return;
+
     const logoLink = logoDiv.querySelector('a');
+    if (!logoLink) return;
+
     const originalText = logoLink.textContent;
     const originalHref = logoLink.getAttribute('href');
 
@@ -22,8 +33,13 @@ document.addEventListener('DOMContentLoaded', function() {
         logoLink.setAttribute('href', originalHref);
         logoLink.removeAttribute('target');
     });
+}
+
+function handleResize() {
+    setupLogoInteraction();
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    setupLogoInteraction();
+    window.addEventListener('resize', handleResize);
 });
-   
-
-
-
