@@ -91,14 +91,20 @@ a:hover {
 
 .logo {
   font-size: 2rem;
+  cursor: pointer;
 }
 
-.logo a {
-  text-decoration: none;
+
   
-}
-.logo a:hover {
-  font-size: 1.9rem;
+
+.logo:hover {
+  font-size: 1.5rem;
+  color: grey;
+  text-decoration: none;
+  text-decoration-color: rgb(181, 181, 181);
+  font-size: 2.3rem;
+  transition: all 0.3s ease-in-out;
+  
 }
 
 /* replaced this with js as i needed a hyperlink  */
