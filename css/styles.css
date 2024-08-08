@@ -283,17 +283,22 @@ section {
 /* ICONS */
 
 .icon {
+  height: 2rem;
+  }
+
+  
+.hyper-icon {
   cursor: pointer;
   height: 2rem;
-  transition: all 0.3s ease-in
-  
+  transition: all 0.3s ease-in;
 }
-.icon:hover {
+
+.hyper-icon:hover {
   height: 2.5rem;
-  
 }
-
-
+.text-container {
+  padding-bottom: 1rem;
+}
 /* BUTTONS */
 
 .btn-container {
@@ -365,7 +370,8 @@ section {
 }
 
 .about-pic {
-  border-radius: 2rem;
+  border-radius: 1rem;
+  
 }
 
 .arrow {
@@ -376,6 +382,7 @@ section {
 
 .details-container {
   padding: 1.5rem;
+  
   flex: 1;
   background: white;
   border-radius: 2rem;
@@ -385,15 +392,19 @@ section {
 }
 
 .section-container {
+  
   gap: 4rem;
   height: 80%;
 }
 
 .section__pic-container {
-  height: 400px;
-  width: 400px;
+  
+  height: 350px;
+  width: 550px;
   margin: auto 0;
 }
+
+
 
 /* EXPERIENCE SECTION */
 
